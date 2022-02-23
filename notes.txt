@@ -10,3 +10,5 @@ References- community project:
 https://all3dp.com/2/raspberry-pi-magic-mirror-smart-best-project/
 https://github.com/MichMich/MagicMirror
 https://magicmirror.builders
+
+do npm build instead of npm start for prod

@@ -1,0 +1,68 @@
+body {
+    background: url("blue.jpg") no-repeat center center fixed;
+    min-width: 100%;
+    min-width: 100%;
+    /* background-position: top; */
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+}
+
+#timedate {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: "Courier New";
+    font-weight: bold;
+
+}
+
+#clock {
+    text-shadow: 0.75vh 0.75vh #ffffff;
+    font-size: 20vh;
+}
+
+#date {
+    text-shadow: 0.5vh 0.5vh #ffffff;
+    font-size: 10vh;
+    text-align: center;
+}
+
+
+
+/* background-image: url("blue.jpg");
+
+background: url(images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  background-repeat: no-repeat; */
+
+/* position: center;
+object-fit: cover;
+width: auto;
+height: auto; */
+
+
+/* p {
+  font-size: 1.5em;
+  color: #FE7F88;
+  background-image: none;
+  background-color: transparent;
+}
+
+div {
+  background-image:
+      url("blue.jpg");
+}
+
+.catsandstars {
+  background-image:
+      url("blue.jpg"),
+      url("blue.jpg");
+  background-color: transparent;
+} */
