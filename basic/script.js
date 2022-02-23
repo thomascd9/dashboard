@@ -8,15 +8,16 @@ function startTime() {
   let s = today.getSeconds();
   m = checkTime(m);
   s = checkTime(s);
-  document.getElementById('clock').innerHTML =  h + ":" + m + ":" + s;
+  document.getElementById('clock').innerText =  h + ":" + m + ":" + s;
 
-  document.getElementById('date').innerHTML = today.toDateString();
-  setTimeout(startTime, 1000);
+  document.getElementById('date').innerText = today.toDateString();
 
   if (today.getSeconds() % 5 == 0) {
     let rand_img = images[Math.floor(Math.random() * images.length)];
     document.body.style.backgroundImage = "url('" + rand_img + "')";
   }
+
+  setTimeout(startTime, 1000);
 }
 
 function checkTime(i) {
