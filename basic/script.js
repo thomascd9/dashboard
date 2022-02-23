@@ -1,3 +1,6 @@
+// Images to draw from:
+const images = ["960x0.jpg", "blue.jpg"];
+
 function startTime() {
   const today = new Date();
   let h = today.getHours();
@@ -9,6 +12,11 @@ function startTime() {
 
   document.getElementById('date').innerHTML = today.toDateString();
   setTimeout(startTime, 1000);
+
+  if (today.getSeconds() % 5 == 0) {
+    let rand_img = images[Math.floor(Math.random() * images.length)];
+    document.body.style.backgroundImage = "url('" + rand_img + "')";
+  }
 }
 
 function checkTime(i) {

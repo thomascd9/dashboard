@@ -12,3 +12,5 @@ https://github.com/MichMich/MagicMirror
 https://magicmirror.builders
 
 do npm build instead of npm start for prod
+
+to learn about: css selectors

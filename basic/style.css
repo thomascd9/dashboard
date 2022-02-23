@@ -17,6 +17,12 @@ body {
     font-family: "Courier New";
     font-weight: bold;
 
+    padding-top: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2vw;
+    padding-left: 2vw;
+
+
 }
 
 #clock {
@@ -28,6 +34,31 @@ body {
     text-shadow: 0.5vh 0.5vh #ffffff;
     font-size: 10vh;
     text-align: center;
+}
+
+#weather {
+
+    float: right;
+    max-width: 25vw;
+    min-width: 25vw;
+    padding-top: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2vw;
+    padding-left: 2vw;
+    opacity: 0.6;
+    border-radius: 0.5vh
+
+}
+
+#aqi {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-top: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2vw;
+    padding-left: 2vw;
+
 }
 
 
