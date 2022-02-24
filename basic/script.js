@@ -1,5 +1,6 @@
-// Images to draw from:
+// Images to draw from (for testing):
 const images = ["960x0.jpg", "blue.jpg"];
+// Actual image names are in image_names.js in const all_img_names
 
 function startTime() {
   const today = new Date();
@@ -13,7 +14,7 @@ function startTime() {
   document.getElementById('date').innerText = today.toDateString();
 
   if (today.getSeconds() % 5 == 0) {
-    let rand_img = images[Math.floor(Math.random() * images.length)];
+    let rand_img = all_img_names[Math.floor(Math.random() * all_img_names.length)];
     document.body.style.backgroundImage = "url('" + rand_img + "')";
   }
 
