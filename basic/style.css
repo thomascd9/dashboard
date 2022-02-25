@@ -27,12 +27,12 @@ body {
 
 #clock {
     text-shadow: 0.75vh 0.75vh #ffffff;
-    font-size: 20vh;
+    font-size: 15vh;
 }
 
 #date {
     text-shadow: 0.5vh 0.5vh #ffffff;
-    font-size: 10vh;
+    font-size: 7.5vh;
     text-align: center;
 }
 

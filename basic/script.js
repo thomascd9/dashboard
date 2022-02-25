@@ -13,7 +13,8 @@ function startTime() {
 
   document.getElementById('date').innerText = today.toDateString();
 
-  if (today.getSeconds() % 5 == 0) {
+  const imgChangeInterval = 10; // change images every x seconds
+  if (today.getSeconds() % imgChangeInterval == 0) {
     let rand_img = all_img_names[Math.floor(Math.random() * all_img_names.length)];
     document.body.style.backgroundImage = "url('" + rand_img + "')";
   }
