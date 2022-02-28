@@ -63,7 +63,7 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
-    font-size: 3vh;
+    font-size: 2vh;
     text-shadow: 0.15vh 0.15vh #ffffff, -0.15vh 0.15vh #ffffff, 0.15vh -0.15vh #ffffff, -0.15vh -0.15vh #ffffff;
 }
 
