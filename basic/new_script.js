@@ -12,13 +12,22 @@ function startTime() {
 }
 
 function changeImages() {
+    const today = new Date();
     const imgChangeInterval = 10; // change images every x seconds
-    if (!paused) {
+    if (!paused && today.getSeconds() % imgChangeInterval == 0) {
       let rand_img = all_img_names[Math.floor(Math.random() * all_img_names.length)];
       document.body.style.backgroundImage = "url('" + rand_img + "')";
       document.getElementById('imagename').innerText = rand_img;
     }
-    setTimeout(changeImages, imgChangeInterval * 1000);
+
+    // Keep image changing tied to clock (personal preference)
+    //  so image changes when clock seconds divisible by 10
+    if (today.getSeconds() % imgChangeInterval != 0) {
+        setTimeout(changeImages, 1000);
+    } else {
+        setTimeout(changeImages, imgChangeInterval * 1000);
+    }
+
 }
 
 function updateWeather() {
