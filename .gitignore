@@ -1,2 +1,8 @@
 image_names.js
 .DS_Store
+dash-gui
+dash-gui/*
+node_modules/*
+node_modules
+package-lock.json
+package.json
