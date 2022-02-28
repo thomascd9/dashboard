@@ -1,8 +1,11 @@
 // Images to draw from (for testing):
-const all_img_names = ["960x0.jpg", "blue.jpg"];
+const test_imgs = ["960x0.jpg", "blue.jpg"];
 // Actual image names are in image_names.js in const all_img_names
 
 var paused = false;
+var max_img_idx = all_img_names.length - 1;
+var curr_img_idx = max_img_idx + 1;
+
 
 function startTime() {
     const today = new Date();
@@ -11,13 +14,30 @@ function startTime() {
     setTimeout(startTime, 1000);
 }
 
+// from https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
 function changeImages() {
+    // if gone through all images, shuffle and reset
+    if (curr_img_idx > max_img_idx) {
+        shuffleArray(all_img_names);
+        curr_img_idx = 0;
+    }
+
     const today = new Date();
     const imgChangeInterval = 10; // change images every x seconds
     if (!paused && today.getSeconds() % imgChangeInterval == 0) {
-      let rand_img = all_img_names[Math.floor(Math.random() * all_img_names.length)];
+      // let rand_img = all_img_names[Math.floor(Math.random() * all_img_names.length)];
+      let rand_img = all_img_names[curr_img_idx++]
       document.body.style.backgroundImage = "url('" + rand_img + "')";
       document.getElementById('imagename').innerText = rand_img;
+      let next_img = all_img_names[curr_img_idx]
+      document.getElementById('preloadimg').src = next_img;
     }
 
     // Keep image changing tied to clock (personal preference)
