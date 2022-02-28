@@ -22,16 +22,15 @@ body {
     padding-bottom: 2vw;
     padding-left: 2vw;
 
+    text-shadow: 0.25vh 0.25vh #ffffff, -0.25vh 0.25vh #ffffff, 0.25vh -0.25vh #ffffff, -0.25vh -0.25vh #ffffff;
 
 }
 
 #clock {
-    text-shadow: 0.75vh 0.75vh #ffffff;
     font-size: 15vh;
 }
 
 #date {
-    text-shadow: 0.5vh 0.5vh #ffffff;
     font-size: 7.5vh;
     text-align: center;
 }
@@ -58,9 +57,15 @@ body {
     padding-right: 2vw;
     padding-bottom: 2vw;
     padding-left: 2vw;
-
 }
 
+#imagename {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 3vh;
+    text-shadow: 0.15vh 0.15vh #ffffff, -0.15vh 0.15vh #ffffff, 0.15vh -0.15vh #ffffff, -0.15vh -0.15vh #ffffff;
+}
 
 
 /* background-image: url("blue.jpg");
