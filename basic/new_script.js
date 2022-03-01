@@ -26,14 +26,13 @@ function changeImages() {
     // if gone through all images, shuffle and reset
     if (curr_img_idx > max_img_idx) {
         shuffleArray(all_img_names);
-        curr_img_idx = 0;
+        curr_img_idx = 1;
     }
 
     const today = new Date();
     const imgChangeInterval = 10; // change images every x seconds
     if (!paused && today.getSeconds() % imgChangeInterval == 0) {
-      // let rand_img = all_img_names[Math.floor(Math.random() * all_img_names.length)];
-      let rand_img = all_img_names[curr_img_idx++]
+      let rand_img = all_img_names[curr_img_idx++ - 1]
       document.body.style.backgroundImage = "url('" + rand_img + "')";
       document.getElementById('imagename').innerText = rand_img;
       let next_img = all_img_names[curr_img_idx]
