@@ -11,7 +11,7 @@ function startTime() {
     const today = new Date();
     document.getElementById('clock').innerText =  today.toTimeString().split(' ')[0];
     document.getElementById('date').innerText = today.toDateString();
-    setTimeout(startTime, 1000);
+
 }
 
 // from https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
@@ -66,6 +66,7 @@ document.addEventListener('keydown', (event) => {
 
 function startup() {
     startTime();
+    setInterval(startTime, 1000);
     changeImages();
     updateWeather();
 }
