@@ -50,7 +50,7 @@ function changeImages() {
 }
 
 function updateWeather() {
-    const weatherUpdateInterval = 10; // upedate weather and aqi every x minutes
+    const weatherUpdateInterval = 5; // upedate weather and aqi every x minutes
     document.getElementById('aqi').src += '';
     document.getElementById('weather').src += '';
     setTimeout(updateWeather, weatherUpdateInterval * 60 * 1000);
