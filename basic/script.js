@@ -1,3 +1,7 @@
+//---------------------------------------//
+// IGNORE THIS FILE -- SEE new_script.js //
+//---------------------------------------//
+
 // Images to draw from (for testing):
 const test_imgs = ["960x0.jpg", "blue.jpg"];
 // Actual image names are in image_names.js in const all_img_names
